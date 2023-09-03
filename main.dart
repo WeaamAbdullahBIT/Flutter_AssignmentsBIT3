@@ -1,3 +1,4 @@
+//import 'dart:html';
 
 import 'package:flutter/material.dart';
 
@@ -17,8 +18,6 @@ class MyApp extends StatelessWidget {
         key:_key ,
         drawer:  drawer1(),
         appBar:AppBar(
-          backgroundColor: Colors.amberAccent,
-          elevation: 0,
           leading:  InkWell(
             onTap: (){
               _key.currentState!.openDrawer();
@@ -29,92 +28,70 @@ class MyApp extends StatelessWidget {
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
-           children: [
-           Padding(
-             padding: const EdgeInsets.only(top: 30),
-             child: Container(
-               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                 border: Border.all(color:Color(0xffFFD46F),width: 10 ),
-                 color: Color(0xffFFD46F),
-
-               ),
-               child: Text("INTRODECTION",style: TextStyle(color: Color(0xff172F42),fontWeight: FontWeight.bold)),
-             ),
-           ),
-             SizedBox(height: 30,),
-             Padding(
-               padding: const EdgeInsets.only(left: 20,right: 20),
-               child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",style: TextStyle(color: Color(0xff9C9D9D)),),
-             ),
-             Divider(color: Colors.amberAccent,thickness: 0.5,),
-             Padding(
-               padding: const EdgeInsets.only(top: 30),
-               child: Container(
-                 decoration: BoxDecoration(
-                   borderRadius: BorderRadius.circular(10),
-                   border: Border.all(color:Color(0xffFFD46F),width: 10 ),
-                   color: Color(0xffFFD46F),
-
-                 ),
-                 child: Text("MY   ABILITEES",style: TextStyle(color: Color(0xff172F42),fontWeight: FontWeight.bold)),
-               ),
-             ),
-             SizedBox(height: 30,),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          // crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-
-            CircleAvatar(
-              backgroundImage:NetworkImage('https://i.pinimg.com/564x/5d/ae/6d/5dae6da1fee0262bf2cb076cf91f5f38.jpg'),
-              radius: 50.0,
-            ),
-            CircleAvatar(
-              backgroundImage:NetworkImage('https://i.pinimg.com/564x/4c/91/8a/4c918a5dd4047e96ba55ef0ccd4e3c94.jpg'),
-              radius: 50.0,
-            ),
-            CircleAvatar(
-              backgroundImage:NetworkImage('https://i.pinimg.com/564x/9f/20/3b/9f203bdddb0398eb7915b6290eaea9da.jpg'),
-              radius: 50.0,
-            ),
-
-           ],
-          ),
-           SizedBox(height: 30,),
-             Row(
-               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-               children: [
-                 Text("UI/UX",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                 Text("FrontEnd",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
-                 Text("Coding",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)),
-               ],
-             ),
-             Divider(color: Colors.amberAccent,thickness: 0.5,),
-
-          Padding(
-              padding: const EdgeInsets.only(top: 30),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color:Color(0xffFFD46F),width: 10 ),
-                  color: Color(0xffFFD46F),
-
+            children: [
+              Container(
+                margin: EdgeInsets.all(15),
+                child: Text("My Projects",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold)),
+              ),
+              Container(
+                margin: EdgeInsets.all(15),
+                color: Colors.yellow,
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Text("Responsive Admin Panel or Dashboard-Flutter UI , However, this information is retrieved at runtime. Here, we don't want the link, but we want what it contains. So, when the application runs, it will fix this data and it will not be changed."
+                      ,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
                 ),
-                child: Text("CONTACTS ME",style: TextStyle(color: Color(0xff172F42),fontWeight: FontWeight.bold)),
+                width: 500,
+                height: 200,
+              ),
+              Container(
+                margin: EdgeInsets.all(15),
+                color: Colors.yellow,
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Text("Responsive Admin Panel or Dashboard-Flutter UI , However, this information is retrieved at runtime. Here, we don't want the link, but we want what it contains. So, when the application runs, it will fix this data and it will not be changed."
+                      ,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                ),
+                width: 500,
+                height: 200,
+              ),
+              Container(
+                margin: EdgeInsets.all(15),
+                color: Colors.yellow,
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Text("Responsive Admin Panel or Dashboard-Flutter UI , However, this information is retrieved at runtime. Here, we don't want the link, but we want what it contains. So, when the application runs, it will fix this data and it will not be changed."
+                      ,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                ),
+                width: 500,
+                height: 200,
+              ),
+              Container(
+                margin: EdgeInsets.all(15),
+                color: Colors.yellow,
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Text("Responsive Admin Panel or Dashboard-Flutter UI , However, this information is retrieved at runtime. Here, we don't want the link, but we want what it contains. So, when the application runs, it will fix this data and it will not be changed."
+                      ,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                ),
+                width: 500,
+                height: 200,
+              ),
+              Container(
+                margin: EdgeInsets.all(15),
+                color: Colors.yellow,
+                child: Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Text("Responsive Admin Panel or Dashboard-Flutter UI , However, this information is retrieved at runtime. Here, we don't want the link, but we want what it contains. So, when the application runs, it will fix this data and it will not be changed."
+                      ,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                ),
+                width: 500,
+                height: 200,
               ),
 
-          ) ,
-               SizedBox(height: 30,),
-               Row(
-                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                 children: [
-                   Icon(Icons.mail),
-                   Icon(Icons.camera_alt),
-                   Icon(Icons.facebook)
-                 ],
-               ),
-           ])),
+
+            ],
+          ),),
       ),
     );
   }
@@ -129,46 +106,53 @@ Drawer drawer1()
       children:  [
         const UserAccountsDrawerHeader(
           decoration: BoxDecoration(
-              color: Colors.amberAccent,
+            // shape: BoxShape.circle,
+              color: Colors.yellow,
               borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(100),
+                  bottomRight: Radius.circular(30),
+                  bottomLeft: Radius.circular(1)
               )
           ),
-          accountName:  Text('Weaam  Abdullah'),
-          accountEmail:  Text('WeaamAbdullah6@gmail.com'),
+          accountName:  Text('Bushra\'a Bawbir',style: TextStyle(color: Colors.black),),
+          accountEmail:  Text('bushramohammed@gmail.com',style: TextStyle(color: Colors.black),),
           currentAccountPicture: CircleAvatar(
             radius: 50,
             backgroundColor: Colors.white70,
             child:  CircleAvatar(
               radius: 33,
-               backgroundColor: Colors.white,
-                
-              backgroundImage:NetworkImage('https://i.pinimg.com/564x/fe/c6/47/fec6478df781dc6be047376201c61e5f.jpg'),
+             backgroundColor: Colors.white,
+              backgroundImage:  AssetImage('assets/images/present.jpg')
+              ,
             ),
           ),
         ),
 
 
         ListTile(
-          leading: const Icon(Icons.location_city,color: Colors.amber,),
-          title: const Text("Sana'a",style: TextStyle(color: Colors.grey),),
+          leading: const Icon(Icons.location_city),
+          title: const Text("Sana'a"),
           onTap: (){},
         ),
         ListTile(
-          leading: const Icon(Icons.home,color: Colors.amber,),
-          title: const Text('AlHsba Street',style: TextStyle(color: Colors.grey),),
+          leading: const Icon(Icons.home),
+          title: const Text('Sixth'),
           onTap: (){},
         ),
         ListTile(
-          leading: const Icon(Icons.phone_android,color: Colors.amber,),
-          title: const Text('7740290470',style: TextStyle(color: Colors.grey),),
+          leading: const Icon(Icons.phone_android),
+          title: const Text('783547886'),
           onTap: (){},
         ),
+        // Container(
+        //   height: 40,
+        //   //color: Colors.white70,
+        //   child: Center(child: Text("Skills")),
+        // ),
         Divider(),
         Column(
           children: [
             Padding(padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child:Center(child: Text("My Skills",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold,color: Colors.grey),)),
+              child:Center(child: Text("skills",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold),)),
             ),
           ],
         ),
@@ -194,7 +178,7 @@ Drawer drawer1()
                     width: 250,
                     height: 10,
                     decoration: BoxDecoration(
-                        color: Colors.grey,
+                        color: Colors.black87,
                         borderRadius: BorderRadius.circular(1)
                     ),
                   )
@@ -206,7 +190,7 @@ Drawer drawer1()
                     width: 200,
                     height: 10,
                     decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.yellow,
                         borderRadius: BorderRadius.circular(1)
                     ),
                   )
@@ -242,7 +226,7 @@ Drawer drawer1()
                     width: 250,
                     height: 10,
                     decoration: BoxDecoration(
-                        color: Colors.grey,
+                        color: Colors.black87,
                         borderRadius: BorderRadius.circular(1)
                     ),
                   )
@@ -254,7 +238,7 @@ Drawer drawer1()
                     width: 200,
                     height: 10,
                     decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.yellow,
                         borderRadius: BorderRadius.circular(1)
                     ),
                   )
@@ -290,7 +274,7 @@ Drawer drawer1()
                     width: 250,
                     height: 10,
                     decoration: BoxDecoration(
-                        color: Colors.grey,
+                        color: Colors.black87,
                         borderRadius: BorderRadius.circular(1)
                     ),
                   )
@@ -302,7 +286,7 @@ Drawer drawer1()
                     width: 200,
                     height: 10,
                     decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.yellow,
                         borderRadius: BorderRadius.circular(1)
                     ),
                   )
@@ -338,7 +322,7 @@ Drawer drawer1()
                     width: 250,
                     height: 10,
                     decoration: BoxDecoration(
-                        color: Colors.grey,
+                        color: Colors.black87,
                         borderRadius: BorderRadius.circular(1)
                     ),
                   )
@@ -350,7 +334,7 @@ Drawer drawer1()
                     width: 200,
                     height: 10,
                     decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: Colors.yellow,
                         borderRadius: BorderRadius.circular(1)
                     ),
                   )
@@ -361,7 +345,56 @@ Drawer drawer1()
           ),
 
         ),
-
+        Divider(),
+        Column(
+          children: [
+            Padding(padding: const EdgeInsets.symmetric(vertical: 8.0),
+              child:Center(child: Text("Knowledge",style: TextStyle(fontSize: 17,fontWeight: FontWeight.bold))),
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Container(
+                    height: 25,
+                    width: 25,
+                    color: Colors.yellow,
+                    child: Icon(Icons.check,color: Colors.white,),
+                  ),
+                ),
+                Text("Flutter,Dart"),
+              ],
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Container(
+                    height: 25,
+                    width: 25,
+                    color: Colors.yellow,
+                    child: Icon(Icons.check,color: Colors.white,),
+                  ),
+                ),
+                Text("Python"),
+              ],
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Container(
+                    height: 25,
+                    width: 25,
+                    color: Colors.yellow,
+                    child: Icon(Icons.check,color: Colors.white,),
+                  ),
+                ),
+                Text("C++"),
+              ],
+            ),
+          ],
+        ),
         Row(
           children:  [
           ],
@@ -374,4 +407,3 @@ Drawer drawer1()
     // surfaceTintColor: Colors.green,
   );
 }
-//build component
